@@ -79,13 +79,16 @@ body {
   width: 20px;
 }
 
+.feed__inputContainer {
+  margin-top: 20px;
+}
+
 /* Main Body */
 .body__main {
   display: flex;
   margin-top: 35px;
-  max-width: 1200px;
-  margin-left: 20px;
-  margin-right: 20px;
+  width: 70%;
+  margin: auto;
 }
 /* Sidebar */
 .sidebar {
@@ -95,6 +98,7 @@ body {
   border-radius: 10px;
   text-align: center;
   height: fit-content;
+  margin-top: 20px;
 }
 
 .sidebar__top > img {
@@ -146,6 +150,17 @@ body {
 .sidebar__statNumber {
   font-weight: bold;
   color: #0a66c2 !important;
+}
+
+.feed-photo {
+  /* height: 300px; */
+  max-height: 500px;
+  width: auto;
+  object-fit: cover;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  text-align: center;
 }
 
 .sidebar__top > h4 {
@@ -352,8 +367,82 @@ body {
 }
 
 .sidebar__topAvatar img{
-  font-size: 40px;
+  /* font-size: 20px; */
   width: 30px;
   height: 30px;
   border-radius: 50%;
 }
+
+.postjibon {
+  cursor: pointer;
+}
+
+.inputOption h4,
+.inputOption h4 {
+  pointer-events: none;
+}
+
+/* Post Modal Start */
+
+.popupbox {
+  z-index: 999;
+}
+
+#postPopBox {
+  display: none;
+}
+#eidtPopBox {
+  display: none;
+}
+
+.popupbox h3 {
+  text-align: center;
+}
+.closeBtn button,
+.closeBtneidt button {
+  height: 20px;
+  position: absolute;
+  top: -10px;
+  right: -8px;
+  width: 20px;
+  background-color: red;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.popupbox .head {
+  position: relative;
+}
+.popbody input,
+.popbody textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+.submitBtn {
+  background-color: #1b74e4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 10px !important;
+  margin-bottom: 0 !important;
+}
+.popupbox {
+  position: fixed;
+  top: 0;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 400px;
+  height: fit-content;
+  padding: 20px;
+  box-shadow: 1px 1px 16px darkgrey;
+  border-radius: 12px;
+}
+/* Post Modal End */

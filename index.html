@@ -7,7 +7,7 @@
     <!-- Google Icons -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>LinkedIn</title>
+  <title>LinkedIn</title>
   </head>
   <body>
     <!-- Header Starts -->
@@ -104,7 +104,7 @@
           <div class="feed__input">
             <i class="material-icons"> create </i>
             <form>
-              <input type="text" />
+              <input type="text" class="postbtn postjibon" placeholder="Start a post">
               <button type="submit">Send</button>
             </form>
           </div>
@@ -129,73 +129,11 @@
           </div>
         </div>
 
-        <!-- Post Starts -->
-        <div class="post">
-          <div class="post__header">
-            <img src="assets/img/profile.jpg" class="material-icons sidebar__topAvatar" alt="">
-            <div class="post__info">
-              <h2>Obidur Rahman</h2>
-              <p>WordPress Developer</p>
-            </div>
-          </div>
-
-          <div class="post__body">
-            <p>WordPress is a free and open-source content management system written in PHP and paired with a MySQL or MariaDB database with supported HTTPS. Features include a plugin architecture and a template system, referred to within WordPress as Themes.</p>
-          </div>
-
-          <div class="feed__inputOptions">
-            <div class="inputOption">
-              <i style="color: gray" class="material-icons"> thumb_up </i>
-              <h4>Like</h4>
-            </div>
-            <div class="inputOption">
-              <i style="color: gray" class="material-icons"> comment </i>
-              <h4>Comment</h4>
-            </div>
-            <div class="inputOption">
-              <i style="color: gray" class="material-icons"> share </i>
-              <h4>Share</h4>
-            </div>
-            <div class="inputOption">
-              <i style="color: gray" class="material-icons"> send </i>
-              <h4>Send</h4>
-            </div>
-          </div>
-        </div>
-        <!-- Post Ends -->
+        
 
         <!-- Post Starts -->
-        <div class="post">
-          <div class="post__header">
-            <img src="assets/img/jibon vai.jpg" class="material-icons sidebar__topAvatar" alt="">
-            <div class="post__info">
-              <h2>Jibon Roy</h2>
-              <p>MERN STACK Developer</p>
-            </div>
-          </div>
+        <div class="push-post">
 
-          <div class="post__body">
-            <p>MEAN is a free and open-source JavaScript software stack for building dynamic web sites and web applications. Because all components of the MEAN stack support programs that are written in JavaScript, MEAN applications can be written in one language for both server-side and client-side execution environments.</p>
-          </div>
-
-          <div class="feed__inputOptions">
-            <div class="inputOption">
-              <i style="color: gray" class="material-icons"> thumb_up </i>
-              <h4>Like</h4>
-            </div>
-            <div class="inputOption">
-              <i style="color: gray" class="material-icons"> comment </i>
-              <h4>Comment</h4>
-            </div>
-            <div class="inputOption">
-              <i style="color: gray" class="material-icons"> share </i>
-              <h4>Share</h4>
-            </div>
-            <div class="inputOption">
-              <i style="color: gray" class="material-icons"> send </i>
-              <h4>Send</h4>
-            </div>
-          </div>
         </div>
         <!-- Post Ends -->
       </div>
@@ -241,5 +179,72 @@
       <!-- Widgets Ends -->
     </div>
     <!-- Main Body Ends -->
+
+
+    <!-- Post Modal Start -->
+    <section id="postPopBox">
+      <div class="popupbox">
+        <div class="head">
+          <div>
+            <h3>Create Post</h3>
+          </div>
+          <div class="closeBtn"><button>X</button></div>
+        </div>
+        <div class="alserbox"></div>
+        <form id="postForm" action="">
+          <div class="popbody">
+            <div>
+              <label for="">Name</label>
+              <input name="name"  type="text" />
+            </div>
+            <div>
+              <label for="">Job Title</label>
+              <input name="jobtitle"  type="text" />
+            </div>
+            <div>
+              <label for="">UserPhoto</label>
+              <input name="userPhoto"  type="text" />
+            </div>
+            <div>
+              <label for="">BG image</label>
+              <input name="bgPhoto"  type="text" />
+            </div>
+            <div>
+              <label for="">Content</label>
+              <textarea name="userContent" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div>
+              <input class="submitBtn" type="submit" value="Create Post" />
+            </div>
+
+        </div>
+          
+        </form>
+      </div>
+    </section>
+    <!-- Post Modal End  -->
+
+    <!-- Edit Modal Start -->
+    <section id="eidtPopBox">
+      <div class="popupbox">
+        <div class="head">
+          <div>
+            <h3>Edit Post</h3>
+          </div>
+          <div class="closeBtneidt"><button>X</button></div>
+        </div>
+        <div class="Editbox"></div>
+        <form id="editForm" action="">
+
+        </form>
+      </div>
+    </section>
+    <!-- Edit Modal End -->
+
+
+
+    <!-- JavaScript -->
+    <script src="assets/js/function.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>
